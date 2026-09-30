@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tic-Tac-Toe Pro</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+        <header>
+            <div>
+                <h1>Tic-Tac-Toe</h1>
+                <p>Classic game • Modern experience</p>
+            </div>
+
+            <button id="themeButton" class="icon-button">🌙</button>
+        </header>
+
+
+        <!-- Game Mode -->
+        <section class="settings">
+
+            <div class="setting">
+                <label for="mode">Game Mode</label>
+
+                <select id="mode">
+                    <option value="pvp">Player vs Player</option>
+                    <option value="ai">Player vs Computer</option>
+                </select>
+            </div>
+
+            <div class="setting" id="difficultyBox">
+
+                <label for="difficulty">Difficulty</label>
+
+                <select id="difficulty">
+                    <option value="easy">Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                </select>
+
+            </div>
+
+        </section>
+
+
+        <!-- Score Board -->
+        <section class="scoreboard">
+
+            <div class="score-card player-x">
+                <span>PLAYER X</span>
+                <strong id="scoreX">0</strong>
+            </div>
+
+            <div class="score-card draws">
+                <span>DRAWS</span>
+                <strong id="scoreDraw">0</strong>
+            </div>
+
+            <div class="score-card player-o">
+                <span id="playerOLabel">PLAYER O</span>
+                <strong id="scoreO">0</strong>
+            </div>
+
+        </section>
+
+
+        <!-- Status -->
+        <div class="status-area">
+
+            <div id="status">
+                Player X's Turn
+            </div>
+
+            <div id="timer">
+                15
+            </div>
+
+        </div>
+
+
+        <!-- Game Board -->
+        <main class="board">
+
+            <button class="cell" data-index="0"></button>
+            <button class="cell" data-index="1"></button>
+            <button class="cell" data-index="2"></button>
+
+            <button class="cell" data-index="3"></button>
+            <button class="cell" data-index="4"></button>
+            <button class="cell" data-index="5"></button>
+
+            <button class="cell" data-index="6"></button>
+            <button class="cell" data-index="7"></button>
+            <button class="cell" data-index="8"></button>
+
+        </main>
+
+
+        <!-- Buttons -->
+        <div class="actions">
+
+            <button id="newRound" class="primary-button">
+                New Round
+            </button>
+
+            <button id="resetScore" class="secondary-button">
+                Reset Score
+            </button>
+
+        </div>
+
+
+        <!-- Instructions -->
+        <section class="instructions">
+
+            <h2>How to Play</h2>
+
+            <p>
+                Get three of your marks in a row horizontally,
+                vertically, or diagonally to win.
+            </p>
+
+        </section>
+
+
+        <footer>
+            <p>Built with HTML • CSS • JavaScript</p>
+        </footer>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
